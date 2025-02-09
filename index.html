@@ -4,37 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Momentom</title>
 </head>
 <body>
+	<h2 id="clock" class="flex fd-c j-c a-c"></h2>
+	<div id="weather" class="flex fd-c j-c a-c">
+		<span></span>
+		<span></span>
+	</div>
 <div class="flex fd-c j-c a-c" id="main_div">
-	<form class="login-form">
+
+	<form class="login-form flex fd-c a-c">
 		<input required maxlength="15" type="text" placeholder="What is your name?" />
 		<input type="submit" value="Log In">
-		<!-- <button>Log In</button> -->
 	</form>
-
-	<h2 id="clock">00 : 00 : 00</h2>
 
 	<h1 id="greeting" class="hidden"></h1>
 
 	<div class="flex fd-c j-c a-c" id="todo_div">
+
 		<form action="" id="todo-form"">
-		<input type="text" placeholder="Write a To Do and Press Enter" required>
+			<input type="text" placeholder="What's your Duty today" required>
 		</form>
 
-		<ul id="todo-list"></ul>
 
-		<div id="quote">
-			<span></span>
-			<span></span>
-		</div>
 
-		<div id="weather">
-			<span></span>
-			<span></span>
-		</div>
 	</div>
+</div>
+<div id="todo-list" class="flex fd-c j-c a-c hidden">
+	<div class="todo-list-title">Your Duty</div>
+</div>
+<div id="quote" class="flex fd-c j-c a-c">
+	<span></span>
+	<span></span>
 </div>
 	<script src="js/env.js"></script>
 	<script src="js/clock.js"></script>
